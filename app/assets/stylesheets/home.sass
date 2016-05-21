@@ -1,0 +1,51 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+$primary-color: #336699
+$other-color: #108826
+$font-stack: Arial, Helvetica, sans-serif
+
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius:    $radius
+	-ms-border-radius:     $radius
+	border-radius:         $radius
+
+$image: no-repeat center center fixed
+
+$width: 100%
+
+
+
+h1
+	color: $primary-color
+
+h2
+	color: $primary-color + $other-color	
+
+ul 
+	li 
+		font-family: $font-stack
+		a 
+			color: $other-color
+
+.box
+	+border-radius(20px)
+	// background: $primary-color
+	background: rgba($primary-color, 0.5)
+	width: $width
+
+body
+	background: $primary-color % $other-color
+	background: url(starsmovingwithcomets.gif) $image
+	
+	background-size: cover
+
+.box2
+	+border-radius(5px)
+	width: $width/4
+	h2
+		background: rgba($primary-color - $other-color, 0.9)
+ 
